@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang='de'>
 <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Fahrzeug-Konfigurator</title>
 
 </head>
@@ -9,31 +9,36 @@
 
 <h1>Fahrzeug-Konfigurator</h1>
 
-<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
     <!-- Fahrzeugmodelle -->
     <fieldset>
         <legend>Fahrzeugmodell</legend>
-        <select id="Fahrzeugmodell" name="Fahrzeugmodell" required>
-            <optgroup label="Zahl">
-                <option Value="McLaren 750S">Mclaren 750S</option>
-                <option value="McLaren 750S Spider">McLaren 750S Spider</option>
-                <option value="McLaren 765LT">McLaren 765LT</option>
-                <option value="McLaren 765LT Spider">McLaren 765LT Spider</option>
-                <option value="McLaren 720S Spider">McLaren 720S Spider</option>
-                <option value="McLaren 720S">McLaren 720S</option>
-                <option value="McLaren 600LT Spider">McLaren 600LT Spider</option>
+        <select id='Fahrzeugmodell' name='Fahrzeugmodell' required>
+            <optgroup label='Kompaktwagen'>
+                <option value='A-Klasse'>A-Klasse</option>
+                <option value='B-Klasse'>B-Klasse</option>
+                <option value='CLA'>CLA</option>
+                <option value='GLA'>GLA</option>
             </optgroup>
-            <optgroup label="Name">
-                <option value="McLaren Artura">McLaren Artura</option>
-                <option value="McLaren Artura Spider">McLaren Artura Spider</option>
-                <option value="McLaren GTS">McLaren GTS</option>
-                <option value="McLaren Elva">McLaren Elva</option>
-                <option value="McLaren Senna GTR">McLaren Senna GTR</option>
-                <option value="McLaren Speedtail">McLaren Speedtail</option>
-                <option value="McLaren Senna">McLaren Senna</option>
-                <option value="McLaren Solus GT">McLaren Solus GT</option>
+            <optgroup label='Limousinen und T-Modelle'>
+                <option value='C-Klasse'>C-Klasse</option>
+                <option value='E-Klasse'>E-Klasse</option>
+                <option value='S-Klasse'>S-Klasse</option>
+                <option value='CLS'>CLS</option>
             </optgroup>
-
+            <optgroup label='SUVs und Offroader'>
+                <option value='G-Klasse'>G-Klasse</option>
+                <option value='GLB'>GLB</option>
+                <option value='GLC'>GLC</option>
+                <option value='GLE'>GLE</option>
+                <option value='GLS'>GLS</option>
+            </optgroup>
+            <optgroup label='Sportwagen'>
+                <option value='AMG GT'>AMG GT</option>
+            </optgroup>
+            <optgroup label='Elektroautos'>
+                <option value='EQC'>EQC</option>
+                <option value='EQS'>EQS</option>
             </optgroup>
         </select>
     </fieldset>
@@ -41,23 +46,23 @@
     <!-- Lackfarben -->
     <fieldset>
         <legend>Lackfarbe</legend>
-        <input type="radio" id="orange" name="Lackfarbe" value="Orange">
-        <label for="orange"> Orange</label><br>
-        <input type="radio" id="rot" name="Lackfarbe" value="Rot">
-        <label for="rot"> Rot</label><br>
-        <input type="radio" id="gelb" name="Lackfarbe" value="Gelb">
-        <label for="gelb"> Gelb</label><br>
-        <input type="radio" id="blau" name="Lackfarbe" value="Blau">
-        <label for="blau"> Blau</label><br>
-        <input type="radio" id="schwarz" name="Lackfarbe" value="Schwarz">
-        <label for="schwarz"> Schwarz</label>
+        <input id='Rot' name='Lackfarbe' type='radio' value='Rot'>
+        <label for='Rot'>Rot</label><br>
+        <input id='Blau' name='Lackfarbe' type='radio' value='Blau'>
+        <label for='Blau'>Blau</label><br>
+        <input id='Grün' name='Lackfarbe' type='radio' value='Grün'>
+        <label for='Grün'>Grün</label><br>
+        <input id='Schwarz' name='Lackfarbe' type='radio' value='Schwarz'>
+        <label for='Schwarz'>Schwarz</label>
     </fieldset>
 
     <!-- Submit Button -->
-    <input type="submit" value="Konfiguration absenden">
+    <input type='submit' value='Konfiguration absenden'>
 </form>
 
 
 </body>
 </html>
+
+
 
