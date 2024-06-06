@@ -11,41 +11,43 @@
 
 <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
     <fieldset>
-        <legend>Modelle</legend>
-        <select id="Fahrzeugmodell" name="Fahrzeugmodell" size="1" required>
-            <optgroup label="Zahl">
-                <option>McLaren 750S</option>
-                <option>McLaren 750S Spider</option>
-                <option>McLaren 765LT</option>
-                <option>McLaren 765LT Spider</option>
-                <option>McLaren 720S Spider</option>
-                <option>McLaren 720S</option>
-                <option>McLaren 600LT Spider</option>
-            </optgroup>
-            <optgroup label="Name">
-                <option>McLaren Artura</option>
-                <option>McLaren Artura Spider</option>
-                <option>McLaren GTS</option>
-                <option>McLaren Elva</option>
-                <option>McLaren Senna GTR</option>
-                <option>McLaren Speedtail</option>
-                <option>McLaren Senna</option>
-                <option>McLaren Solus GT</option>
-            </optgroup>
-        </select>
+        <label>Fahrzeugmodellen:
+            <select id="Fahrzeugmodell" name="Fahrzeugmodell" size="1" required>
+                <optgroup label="Zahl">
+                    <option>McLaren 750S</option>
+                    <option>McLaren 750S Spider</option>
+                    <option>McLaren 765LT</option>
+                    <option>McLaren 765LT Spider</option>
+                    <option>McLaren 720S Spider</option>
+                    <option>McLaren 720S</option>
+                    <option>McLaren 600LT Spider</option>
+                </optgroup>
+                <optgroup label="Name">
+                    <option>McLaren Artura</option>
+                    <option>McLaren Artura Spider</option>
+                    <option>McLaren GTS</option>
+                    <option>McLaren Elva</option>
+                    <option>McLaren Senna GTR</option>
+                    <option>McLaren Speedtail</option>
+                    <option>McLaren Senna</option>
+                    <option>McLaren Solus GT</option>
+                </optgroup>
+            </select>
+        </label>
     </fieldset>
     <fieldset>
-        <legend>Lackfarbe</legend>
-        <input type="radio" id=orange name="Lackfarbe" value="Orange">
-        <label for="orange"> Orange</label><br>
-        <input type="radio" id=rot name="Lackfarbe" value="Rot">
-        <label for="rot"> Rot</label><br>
-        <input type="radio" id=gelb name="Lackfarbe" value="Gelb">
-        <label for="gelb"> Gelb</label><br>
-        <input type="radio" id=blau name="Lackfarbe" value="Blau">
-        <label for="blau"> Blau</label><br>
-        <input type="radio" id=schwarz name="Lackfarbe" value="Schwarz">
-        <label for="schwarz"> Schwarz</label>
+        <label>Lackfarben:
+            <input type="radio" id=orange name="Lackfarbe" value="Orange">
+            <label for="orange"> Orange</label><br>
+            <input type="radio" id=rot name="Lackfarbe" value="Rot">
+            <label for="rot"> Rot</label><br>
+            <input type="radio" id=gelb name="Lackfarbe" value="Gelb">
+            <label for="gelb"> Gelb</label><br>
+            <input type="radio" id=blau name="Lackfarbe" value="Blau">
+            <label for="blau"> Blau</label><br>
+            <input type="radio" id=schwarz name="Lackfarbe" value="Schwarz">
+            <label for="schwarz"> Schwarz</label>
+        </label>
     </fieldset>
     <button type="submit">Konfiguration absenden</button>
 </form>
